@@ -1,6 +1,6 @@
 #!/bin/zsh
-isInternetIsBack=0
-for i in {1..10}; do
+while true 
+do
     ping 1.1.1.1 -c 1 -w 1
     if [ $? -eq 0 ]; then 
         echo "yes"
